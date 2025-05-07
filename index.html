@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Верхня шапка -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Логотип -->
+      <div class="logo">
+        <a href="#home">
+          <img src="images/logo.png" alt="Site Logo" />
+        </a>
+      </div>
+      <!-- Навігація -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro секція -->
+  <section id="home" class="intro">
+    <div class="container intro-container">
+      <div class="intro-avatar">
+        <img src="images/avatar.png" alt="Avatar" />
+      </div>
+      <h1 class="intro-title">
+        I do code and<br>make content about it!
+      </h1>
+      <p class="intro-description">
+        I am a seasoned full-stack software engineer with over 8 years of professional experience, specializing in backend development.
+        My expertise lies in crafting robust and scalable SaaS-based architectures on the Amazon AWS platform.
+      </p>
+      <div class="intro-buttons">
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="cv.pdf" download class="btn btn-secondary">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE WITH секція -->
+  <section class="experience-with">
+    <div class="container">
+      <h2 class="section-heading">EXPERIENCE WITH</h2>
+      <div class="tech-logos">
+        <div class="tech-item">
+          <img src="images/javascript.png" alt="JavaScript" />
+        </div>
+        <div class="tech-item">
+          <img src="images/nodejs.png" alt="Node.js" />
+        </div>
+        <div class="tech-item">
+          <img src="images/html5.png" alt="HTML5" />
+        </div>
+        <div class="tech-item">
+          <img src="images/css3.png" alt="CSS3" />
+        </div>
+        <div class="tech-item">
+          <img src="images/reactjs.png" alt="React.js" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects секція -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-heading projects-heading">PROJECTS</h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <a href="https://example.com/html-tutorial" target="_blank">
+            <img src="images/project-1.jpeg" alt="Project 1" />
+            <p class="project-text">
+              <span class="project-link-line1">
+                <span>CLICK HERE TO VISIT</span>
+                <img src="icons/arrow.webp" alt="Arrow" class="project-arrow-icon" />
+              </span><br>
+              <span class="project-link-line2">HTML TUTORIAL</span>
+            </p>
+          </a>
+        </div>
+        <div class="project-item">
+          <a href="https://example.com/html-tutorial" target="_blank">
+            <img src="images/project-2.jpeg" alt="Project 2" />
+            <p class="project-text">
+              <span class="project-link-line1">
+                <span>CLICK HERE TO VISIT</span>
+                <img src="icons/arrow.webp" alt="Arrow" class="project-arrow-icon" />
+              </span><br>
+              <span class="project-link-line2">HTML TUTORIAL</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience секція -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-heading experience-heading">EXPERIENCE</h2>
+      <div class="experience-list">
+        <!-- Перший досвід -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-info">
+              <img src="icons/goog-logo.svg" alt="Google" class="experience-icon" />
+              <h3 class="experience-title">Lead Software Engineer at Google</h3>
+            </div>
+            <div class="experience-date">Nov 2018 - Present</div>
+          </div>
+          <p class="experience-description">
+            As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.
+          </p>
+        </div>
+        <!-- Другий досвід -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-info">
+              <img src="icons/apple-logo.svg" alt="Apple" class="experience-icon" />
+              <h3 class="experience-title">Junior Software Engineer at Apple</h3>
+            </div>
+            <div class="experience-date">Jan 2015 - Dec 2016</div>
+          </div>
+          <p class="experience-description">
+            During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.
+          </p>
+        </div>
+        <!-- Третій досвід -->
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-info">
+              <img src="icons/meta-logo.svg" alt="Meta" class="experience-icon" />
+              <h3 class="experience-title">Software Engineer at Meta</h3>
+            </div>
+            <div class="experience-date">Jan 2017 - Dec 2018</div>
+          </div>
+          <p class="experience-description">
+            At Meta, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects involving large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-container">
+      <div class="footer-contact">
+        <h2 class="footer-heading">Contact</h2>
+        <p class="footer-description">
+          Seasoned Full Stack Software Engineer with over 8 years of hands-on experience in designing and implementing robust, scalable, and innovative web solutions. Adept at leveraging a comprehensive skill set encompassing front-end and back-end technologies.
+        </p>
+        <div class="footer-email">
+          <img src="icons/email-icon	.svg" alt="Email Icon" />
+          <a href="mailto:abmcodehub@gmail.com">abmcodehub@gmail.com</a>
+        </div>
+      </div>
+      <!-- Соціальні іконки (вирівняні по лівому краю) -->
+      <div class="footer-social">
+        <ul>
+          <li><a href="#"><img src="icons/Instagram.svg"alt="Instagram" /></a></li>
+          <li><a href="#"><img src="images/x.png" alt="X" /></a></li>
+          <li><a href="#"><img src="images/youtube.png" alt="YouTube" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

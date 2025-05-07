@@ -1,0 +1,351 @@
+/* Імпорт шрифтів Poppins з папки fonts */
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Black.ttf') format('truetype');
+  font-weight:900;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #161513; 
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  min-width: 1024px; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.site-header {
+  background-color: #1e1e1d;
+  padding: 20px 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 80px; 
+}
+.nav {
+  width: 55%;
+  text-align: left;
+}
+.nav ul {
+  list-style: none; 
+  display: inline-flex;
+  gap: 70px;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+.nav ul li a:hover {
+  color: #ccc;
+}
+
+/* Intro секція */
+.intro {
+  padding: 60px 0;
+  text-align: center;
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.intro-avatar img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.intro-title {
+  font-size:3rem;
+  font-weight:black;
+  margin: 10px 0;
+}
+.intro-description {
+  max-width: 800px;
+  font-size: 1.1rem;
+  margin: 0 auto 40px;  
+  color: #ccc;         
+}
+.intro-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.btn {
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold; 
+}
+.btn-primary {
+  background-color: #fff;
+  color: #000;
+}
+.btn-primary:hover {
+  background-color: #e0e0e0;
+}
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.experience-with {
+  background-color: #161513;
+  padding: 60px 0;
+  text-align: center;
+}
+.experience-with .section-heading {
+  color: #ccc;       
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 400;  
+}
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.tech-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+.projects {
+  background-color: #161513;
+  padding: 60px 0;
+  text-align: center;
+}
+.projects-heading {
+  color: #ea673e;           
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase; 
+}
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.project-item {
+  background-color: #1e1e1d;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+.project-item:hover {
+  transform: scale(1.05);
+}
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.project-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left; 
+  color: #fff;
+}
+
+.project-link-line1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400; 
+  font-size: 0.45rem; 
+  color: #fff;
+}
+.project-link-line2 {
+  display: block;
+  font-weight: 700; /* Bold */
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.project-arrow-icon {
+  width: 10%;
+  max-width: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.experience {
+  background-color: #161513;
+  padding: 60px 0;
+}
+.experience-heading {
+  color: #3890e8;           
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase; 
+  text-align: center;
+}
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.experience-item {
+  background-color: #161513;
+  padding: 20px;
+  border-radius: 8px;
+}
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.experience-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.experience-icon {
+  width: 40px;
+  height: 40px;
+}
+.experience-title {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.experience-date {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.experience-description {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Футер */
+.site-footer {
+  background-color: #1e1e1d;
+  padding: 40px 0;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  text-align: left;
+  gap: 20px;
+}
+.footer-contact {
+  max-width: 600px;
+}
+.footer-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.footer-description {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.footer-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.footer-email img {
+  width: 30px;
+  height: 30px;
+}
+.footer-email a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+.footer-social ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+.footer-social ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .nav {
+    width: 100%;
+    text-align: center;
+  }
+  .intro-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
