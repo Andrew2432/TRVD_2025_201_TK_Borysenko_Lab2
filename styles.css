@@ -11,14 +11,12 @@
   font-weight: 700;
   font-style: normal;
 }
-}
 @font-face {
   font-family: 'Poppins';
   src: url('fonts/Poppins-Black.ttf') format('truetype');
-  font-weight:900;
+  font-weight: 900;
   font-style: normal;
 }
-
 
 * {
   margin: 0;
@@ -28,20 +26,18 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #161513; 
+  background-color: #161513;
   color: #fff;
   line-height: 1.6;
 }
 
-
 .container {
   width: 90%;
   max-width: 1440px;
-  min-width: 1024px; 
+  min-width: 1024px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .site-header {
   background-color: #1e1e1d;
@@ -53,14 +49,14 @@ body {
   align-items: center;
 }
 .logo img {
-  width: 80px; 
+  width: 80px;
 }
 .nav {
   width: 55%;
   text-align: left;
 }
 .nav ul {
-  list-style: none; 
+  list-style: none;
   display: inline-flex;
   gap: 70px;
   margin: 0;
@@ -94,15 +90,15 @@ body {
   object-fit: cover;
 }
 .intro-title {
-  font-size:3rem;
-  font-weight:black;
+  font-size: 3rem;
+  font-weight: black;
   margin: 10px 0;
 }
 .intro-description {
   max-width: 800px;
   font-size: 1.1rem;
-  margin: 0 auto 40px;  
-  color: #ccc;         
+  margin: 0 auto 40px;
+  color: #ccc;
 }
 .intro-buttons {
   display: flex;
@@ -116,7 +112,7 @@ body {
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-weight: bold; 
+  font-weight: bold;
 }
 .btn-primary {
   background-color: #fff;
@@ -141,10 +137,10 @@ body {
   text-align: center;
 }
 .experience-with .section-heading {
-  color: #ccc;       
+  color: #ccc;
   font-size: 1.5rem;
   margin-bottom: 30px;
-  font-weight: 400;  
+  font-weight: 400;
 }
 .tech-logos {
   display: flex;
@@ -158,30 +154,34 @@ body {
   object-fit: contain;
 }
 
-
 .projects {
   background-color: #161513;
   padding: 60px 0;
   text-align: center;
 }
 .projects-heading {
-  color: #ea673e;           
+  color: #ea673e;
   font-size: 2rem;
   margin-bottom: 30px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
+
+/* Зміни для сітки проектів */
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 0;  /* Прибрано відступи між блоками */
 }
+
+/* Зміни для кожного блоку проекту */
 .project-item {
   background-color: #1e1e1d;
-  padding: 20px;
+  padding: 0;            /* Відсутність внутрішніх відступів */
   border-radius: 8px;
   transition: transform 0.3s ease;
-  max-width: 300px;
+  width: 400px;          /* Збільшено розмір блоку */
+  margin: 0;             /* Прибрано зовнішні відступи */
 }
 .project-item:hover {
   transform: scale(1.05);
@@ -191,26 +191,26 @@ body {
   height: auto;
   border-radius: 4px;
 }
+
 .project-text {
-  margin-top: 10px;
+  margin-top: 0;
   font-size: 0.9rem;
   text-transform: uppercase;
   line-height: 1.2;
-  text-align: left; 
-  color: #fff;
+  text-align: left;
+  color: #ccc;
 }
 
 .project-link-line1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 400; 
-  font-size: 0.45rem; 
-  color: #fff;
+  font-weight: 400;
+  font-size: 0.45rem;
 }
 .project-link-line2 {
   display: block;
-  font-weight: 700; /* Bold */
+  font-weight: 700;
   font-size: 0.9rem;
   color: #fff;
 }
@@ -222,15 +222,43 @@ body {
   margin-left: 5px;
 }
 
+/* Налаштування лінків для проектів */
+.project-item a {
+  color: #ccc;
+  text-decoration: none;
+}
+.project-item a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+/* Зміни для сітки проектів */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;  /* Відступ між блоками проектів */
+}
+
+/* Зміни для тексту всередині блоку проекту */
+.project-text {
+  margin-top: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  line-height: 0.5;
+  text-align: left;
+  color: #ccc;
+  padding: 20px;  /* Невеликі відступи текста */
+}
+
 .experience {
   background-color: #161513;
   padding: 60px 0;
 }
 .experience-heading {
-  color: #3890e8;           
+  color: #3890e8;
   font-size: 2rem;
   margin-bottom: 40px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-align: center;
 }
 .experience-list {
@@ -281,7 +309,7 @@ body {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  
+  align-items: flex-start;
   text-align: left;
   gap: 20px;
 }
